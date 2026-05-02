@@ -1,0 +1,21 @@
+{
+  "name": "GoMate Relocate",
+  "short_name": "GoMate",
+  "description": "Relocation intelligence for 125+ countries. Visas, housing, healthcare, banking, and the real systems behind moving abroad.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf9",
+  "theme_color": "#57785a",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/Hub-Viking93/gomatelogo/626b0079bd23e19b026f898fdd9353dfe7aae4d9/GoMateLogo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/Hub-Viking93/gomatelogo/b43ceb450338682bd6d433e23202faa50ec674ad/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
