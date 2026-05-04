@@ -71,11 +71,15 @@ const HomePage = () => {
             ease: 'easeOut'
           }} className="max-w-5xl mx-auto">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-2xl">
-                Just Go Mate!
+                GoMate
               </h1>
 
               <p className="text-xl md:text-2xl text-stone-100 mb-12 leading-relaxed max-w-3xl mx-auto drop-shadow-lg font-light">
-                125+ country guides built around the real systems behind moving abroad — visas, banking, registration deadlines, and the things that catch people off guard.
+                Move abroad with the full picture.
+                <br />
+                125+ country guides covering the systems that actually run people's lives — visas, banking, healthcare, and the local rules no one warns you about.
+                <br />
+                <em className="italic">Just Go Mate.</em>
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
