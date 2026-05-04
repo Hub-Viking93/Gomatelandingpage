@@ -1,0 +1,156 @@
+Update PricingPage.jsx to match the consolidated app pricing model                                                    
+  (per gomate.md Prompt 9.3): Free + Pro only. Remove Pro Single,                                                       
+  rename Pro+ to Pro, update prices.                                                                                    
+                                                                                                                        
+  KEEP ALL DISCLAIMERS UNTOUCHED. The beta notice ("currently in                                                        
+  development", "Beta testers will get free early access"), the                                                         
+  "125+ country guides... completely free" line, all legal language —                                                   
+  preserved verbatim.                                                                                                   
+                                                                                                                        
+  CHANGES TO src/pages/PricingPage.jsx:                                                                                 
+                                                                                                                        
+  1. tiers array — replace the entire array with:                                                                       
+                                                                                                                      
+  const tiers = [                                                                                 
+    {                                                                                                                   
+      name: 'Free',                            
+      price: '$0',
+      period: '',                                                                                                       
+      description: 'Explore your options',                                                                            
+      highlight: false,                                                                                                 
+      features: [                                                                                                       
+        'Full AI chat interview',                                                                 
+        'Profile building (65+ fields)',                                                                                
+        'Basic relocation overview',                                                                                  
+        'All 125+ country guides',                                                                                      
+        'Field Guide articles',                                                                                         
+      ],                                                                                          
+      limits: '1 plan. No multi-agent research, guides, or post-arrival features.',                                     
+      cta: 'Try Free',                                                                                                  
+      ctaLink: APP_URL,                                                                                               
+      ctaExternal: true,                                                                          
+    },                                                                                                                  
+    {                                                                                                                 
+      name: 'Pro',                                                                                
+      price: '$39',                                                                                                     
+      period: '/month',                        
+      description: 'Your AI relocation consultant team',
+      highlight: true,                                                                                                  
+      features: [                                                                                                     
+        'Multi-agent extraction (no hallucination)',                                              
+        '13 specialist research agents',                                                                                
+        'Visa recommendations grounded in official sources',                                                            
+        'Inline citations (Migrationsverket, Skatteverket, etc.)',                                                    
+        'Cost of living + budget planner',                                                                              
+        'Document checklist with apostille tracking',                                                                   
+        'Pre-departure timeline',                                                                                       
+        'Post-arrival settling-in (DAG-based tasks)',                                                                   
+        'Compliance alerts + iCal export',                                                                              
+        'Audit trail per recommendation',                                                                               
+        'Unlimited relocation plans',                                                                                   
+        'Email reminders + document templates',                                                                         
+      ],                                                                                                                
+      limits: 'Full platform access. Cancel anytime.',                                                                  
+      cta: 'Start Pro',                                                                                                 
+      ctaLink: APP_URL,                                                                                                 
+      ctaExternal: true,                                                                          
+    },                                                                                                                  
+  ];                                                                                                                  
+                                                                                                  
+  2. bundles array — replace with simpler version:                                                                      
+                                               
+  const bundles = [
+    { plan: 'Monthly', price: '$39/mo', perMonth: '$39', savings: null },
+    { plan: 'Annual', price: '$299/year', perMonth: '$25', savings: '36%' },                                            
+  ];                                                                                                                    
+                                                                                                                      
+  3. featureMatrix — collapse to Free + Pro only (remove the "plus"                                                     
+  column, merge all checkmarks into "pro"):                                                                             
+                                                                                                                        
+  const featureMatrix = [                                                                                               
+    { feature: 'Chat interview', free: true, pro: true },                                         
+    { feature: 'Country guides browsing', free: true, pro: true },                                                      
+    { feature: 'Field Guide articles', free: true, pro: true },                                                       
+    { feature: 'Multi-agent extraction', free: false, pro: true },                                                      
+    { feature: 'Visa specialist agent', free: false, pro: true },                                                       
+    { feature: 'Tax strategist agent', free: false, pro: true },                                                        
+    { feature: 'Documents specialist (apostille)', free: false, pro: true },                                            
+    { feature: 'Cost of living analysis', free: false, pro: true },                                                   
+    { feature: 'Budget planner + affordability', free: false, pro: true },                                              
+    { feature: 'Inline citations to official sources', free: false, pro: true },                                        
+    { feature: 'Audit trail per recommendation', free: false, pro: true },                                            
+    { feature: 'Personalized relocation guide', free: false, pro: true },                                               
+    { feature: 'Document checklist + apostille tracking', free: false, pro: true },                                     
+    { feature: 'Pre-departure timeline', free: false, pro: true },                                                      
+    { feature: 'Plan consistency checks (17 rules)', free: false, pro: true },                                          
+    { feature: 'Settling-in tasks (DAG)', free: false, pro: true },                                                     
+    { feature: 'Compliance alerts + iCal export', free: false, pro: true },                                             
+    { feature: 'Post-arrival AI assistant', free: false, pro: true },                                                 
+    { feature: 'Visa application tracker', free: false, pro: true },                                                    
+    { feature: 'Banking + tax registration wizards', free: false, pro: true },                                          
+    { feature: 'Wellbeing check-ins (stage-aware)', free: false, pro: true },                                           
+    { feature: 'Email reminders + document templates', free: false, pro: true },                                        
+    { feature: 'Unlimited relocation plans', free: false, pro: true },                                                
+  ];                                                                                                                    
+                                                                                                                        
+  4. Feature matrix table rendering — find the JSX that renders                                                         
+  columns for "Pro Single" and "Pro+", reduce to "Free" and "Pro" only.                                                 
+  Remove the third column entirely. The table goes from 4 columns                                                       
+  (Feature | Free | Pro Single | Pro+) to 3 columns (Feature | Free | Pro).                                             
+                                                                                                                        
+  5. Meta tags — update both:                                                                                           
+                                                                                                                        
+  <title>Pricing — GoMate</title>                                                                                       
+                                                                                                                      
+  <meta name="description" content="GoMate pricing: Free for profile                              
+  building + 125 country guides, Pro at $39/mo for the full AI                                                          
+  relocation consultant team. Replace a $5,000 relocation agency for                                                    
+  1% of the cost." />                                                                                                   
+                                                                                                                      
+  <meta property="og:description" content="Free for browsing + profile                                                  
+  building. Pro at $39/mo for the full AI relocation consultant team." />                                               
+                                                                                                                        
+  6. Hero subheadline — update from:                                                                                    
+  "A relocation agency costs $2,000–5,000 and focuses on corporations.                            
+  GoMate gives individuals the same structured intelligence — starting                                                  
+  at $29."                                                                                                            
+                                                                                                  
+  To:                                                                                                                   
+  "A relocation agency costs $5,000–15,000 and focuses on corporations.
+  GoMate gives individuals an AI consultant team — starting at $39/mo.                                                  
+  Cancel anytime."                                                                                                    
+                                                                                                                        
+  7. Pro+ Bundles section header — rename:                                                                              
+  "Pro+ Subscription Plans" → "Pro Subscription Plans"                                                                
+                                                                                                                        
+  8. Bottom CTA section — already updated to "Open GoMate App", no                                                      
+  change needed.                                                                                                      
+                                                                                                  
+  9. Add APP_URL import if not already present:                                                                         
+  import { APP_URL } from '@/lib/config';                                                                             
+                                                                                                
+  10. Update the `<Link to={tier.ctaLink}>` to handle external CTAs:                                                    
+     - If tier.ctaExternal is true: render <a href={tier.ctaLink}                                                     
+       target="_blank" rel="noopener noreferrer">                                               
+     - Else: render <Link to={tier.ctaLink}>                                                                            
+                                                                                                                      
+  DO NOT TOUCH:                                                                                                         
+  - The Beta Notice div ("currently in development", "Beta testers                                                      
+    will get free early access" — load-bearing transparency)                                    
+  - The "125+ country guides... completely free" line                                                                   
+  - The "Join the beta waitlist" link in beta notice (still routes to                                                 
+    /app for the marketing waitlist signup)                                                                             
+  - The "Ready to Plan Your Move?" bottom hero                                                                          
+  - Any /legal/* references                                                                                             
+  - The pricing page's overall structure/layout/styling                                                                 
+                                                                                                                        
+  Verification after changes:                                                                                           
+  - Pricing page renders with exactly 2 tiers (Free + Pro)                                                            
+  - Feature matrix has exactly 3 columns                                                                                
+  - "Pro Single" appears nowhere in the rendered DOM                                                                    
+  - All "Pro+" mentions changed to "Pro" except in URL paths if any                                                   
+  - Beta notice intact at top                                                                                           
+  - "Currently in development" disclaimer intact                                                                        
+  - Free tier CTA opens app in new tab (external link)                                                                  
+  - Pro tier CTA opens app in new tab (external link)                                                                   
+  - Beta waitlist link in beta notice still routes to /app internally

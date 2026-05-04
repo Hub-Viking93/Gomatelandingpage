@@ -1,0 +1,212 @@
+# GoMate Relocate
+> Relocation intelligence platform — practical guides for moving abroad. Visas, housing, healthcare, banking, admin, and the real systems behind 125+ countries.
+
+## Static Pages
+- [Home](https://gomaterelocate.com/) — Main landing page. Overview of GoMate, country guides, field guide, and app waitlist.
+- [Country Guides](https://gomaterelocate.com/country-guides) — Browse 125+ country guides covering visas, housing, healthcare, work, cost of living, and local admin.
+- [Field Guide](https://gomaterelocate.com/field-guide) — 60+ in-depth articles on the mechanics of moving abroad.
+- [About](https://gomaterelocate.com/about) — What GoMate is, what we provide, our philosophy, and how the project started.
+- [GoMate App](https://gomaterelocate.com/app) — AI-powered relocation planning: 15-minute interview, personalized guide, task dependencies, deadline tracking, compliance alerts. Currently in development.
+- [Compare Countries](https://gomaterelocate.com/compare) — Compare two countries side by side: cost of living, visa options, complexity, and key requirements.
+- [Pricing](https://gomaterelocate.com/pricing) — GoMate pricing: Free, Pro Single ($29 one-time), Pro+ ($29/mo). Feature comparison and subscription plans.
+- [FAQ](https://gomaterelocate.com/faq) — Frequently asked questions about GoMate, the guides, the app, and pricing.
+
+## Country Guides (129)
+- [Moving to Albania](https://gomaterelocate.com/country-guides/albania) — Stunning coastlines, ancient history, and one of Europe's most affordable and hospitable hidden gems.
+- [Moving to Andorra](https://gomaterelocate.com/country-guides/andorra) — A tiny Pyrenean co-principality with flat 10% income tax, world-class skiing, and a deeply Catalan identity.
+- [Moving to Argentina](https://gomaterelocate.com/country-guides/argentina) — Passion, steak, tango, and diverse landscapes.
+- [Moving to Armenia](https://gomaterelocate.com/country-guides/armenia) — An ancient Christian nation in the Caucasus with an open economy, low taxes, and an easy residency path.
+- [Moving to Australia](https://gomaterelocate.com/country-guides/australia) — A continent of stunning beaches, unique wildlife, and a relaxed outdoor lifestyle.
+- [Moving to Austria](https://gomaterelocate.com/country-guides/austria) — Imperial history, alpine landscapes, and a formal, high-quality way of life.
+- [Moving to Azerbaijan](https://gomaterelocate.com/country-guides/azerbaijan) — A Caspian energy power at the crossroads of Europe and Asia, combining ancient Silk Road heritage with modern oil wealth.
+- [Moving to Bahamas](https://gomaterelocate.com/country-guides/bahamas) — An archipelago of 700 islands with no income tax, major financial services, and a sharp divide between Nassau and the Family Islands.
+- [Moving to Bahrain](https://gomaterelocate.com/country-guides/bahrain) — A compact, cosmopolitan island kingdom blending Gulf tradition with a modern financial hub and surprisingly liberal social scene.
+- [Moving to Bangladesh](https://gomaterelocate.com/country-guides/bangladesh) — A river-laced delta nation with an energetic economy and rich Bengali heritage.
+- [Moving to Barbados](https://gomaterelocate.com/country-guides/barbados) — A polished Caribbean island with strong institutions, high import costs, and a lifestyle built around beaches, service, and "island time".
+- [Moving to Belgium](https://gomaterelocate.com/country-guides/belgium) — High taxes funding high-quality services, in a complex but comfortable multicultural hub.
+- [Moving to Belize](https://gomaterelocate.com/country-guides/belize) — The only English-speaking country in Central America, with the world's second-largest barrier reef and an unusually friendly retiree residency program.
+- [Moving to Bhutan](https://gomaterelocate.com/country-guides/bhutan) — The last Himalayan kingdom, where Gross National Happiness and strict tourism controls preserve a unique way of life.
+- [Moving to Bolivia](https://gomaterelocate.com/country-guides/bolivia) — High-altitude, indigenous-majority Andean nation with two capitals, surreal landscapes, and very low living costs.
+- [Moving to Bosnia and Herzegovina](https://gomaterelocate.com/country-guides/bosnia-and-herzegovina) — A mountainous, multi-ethnic Balkan republic with Ottoman-Austrian heritage and a uniquely complex post-Dayton governance system.
+- [Moving to Botswana](https://gomaterelocate.com/country-guides/botswana) — Africa's longest-running democracy, built on diamonds and the Okavango Delta, with one of the continent's highest standards of governance.
+- [Moving to Brazil](https://gomaterelocate.com/country-guides/brazil) — A continental nation of rhythm, biodiversity, and warm hospitality.
+- [Moving to Bulgaria](https://gomaterelocate.com/country-guides/bulgaria) — The cheapest country in the EU with great ski resorts and sunny beaches.
+- [Moving to Cambodia](https://gomaterelocate.com/country-guides/cambodia) — An affordable, welcoming Southeast Asian kingdom where ancient temples meet a fast-growing expat scene.
+- [Moving to Canada](https://gomaterelocate.com/country-guides/canada) — Vast wilderness, multicultural cities, and extreme politeness.
+- [Moving to Cape Verde](https://gomaterelocate.com/country-guides/cape-verde) — An Atlantic archipelago of ten islands blending Lusophone heritage, Creole culture, and a relaxed, morabeza way of life.
+- [Moving to Chile](https://gomaterelocate.com/country-guides/chile) — Modern, stable, and efficient living with a formal social structure.
+- [Moving to China](https://gomaterelocate.com/country-guides/china) — The world's oldest continuous civilization meets breakneck modernity in a country where WeChat replaces your wallet, your ID, and your social life.
+- [Moving to Colombia](https://gomaterelocate.com/country-guides/colombia) — A vibrant nation of coffee, salsa, and incredible biodiversity.
+- [Moving to Costa Rica](https://gomaterelocate.com/country-guides/costa-rica) — Pura Vida! A nature lover's paradise with a laid-back lifestyle.
+- [Moving to Côte d'Ivoire](https://gomaterelocate.com/country-guides/cote-divoire) — West Africa's fastest-growing economy and francophone business hub, blending lagoon skyline with deep-rooted cultural traditions.
+- [Moving to Croatia](https://gomaterelocate.com/country-guides/croatia) — A blend of Central European efficiency and Mediterranean relaxation.
+- [Moving to Cuba](https://gomaterelocate.com/country-guides/cuba) — A Caribbean island where revolutionary history, cultural richness, and daily improvisation define life under scarcity.
+- [Moving to Cyprus](https://gomaterelocate.com/country-guides/cyprus) — A relaxed Mediterranean island with attractive tax schemes and a divided geography.
+- [Moving to Czech Republic](https://gomaterelocate.com/country-guides/czech-republic) — The heart of Central Europe, offering stunning architecture, beer culture, and safety.
+- [Moving to Denmark](https://gomaterelocate.com/country-guides/denmark) — Design, bicycling, and coziness in a compact, efficient society.
+- [Moving to Dominican Republic](https://gomaterelocate.com/country-guides/dominican-republic) — A warm, social Caribbean country where daily life runs on relationships, flexibility, and coastal energy.
+- [Moving to Ecuador](https://gomaterelocate.com/country-guides/ecuador) — Offers a low-cost, high-quality retirement or remote work life in the Andes.
+- [Moving to Egypt](https://gomaterelocate.com/country-guides/egypt) — The cradle of civilization, offering chaos, history, and the Red Sea.
+- [Moving to El Salvador](https://gomaterelocate.com/country-guides/el-salvador) — A small Central American nation remaking itself through Bitcoin, surf tourism, and a hard-security turn.
+- [Moving to Estonia](https://gomaterelocate.com/country-guides/estonia) — The world's first digital society, offering silence, space, and efficiency.
+- [Moving to Ethiopia](https://gomaterelocate.com/country-guides/ethiopia) — Africa's second most populous nation, home to ancient Orthodox heritage, Addis Ababa's diplomatic weight, and the birthplace of coffee.
+- [Moving to Fiji](https://gomaterelocate.com/country-guides/fiji) — A relaxed Pacific archipelago with a trilingual culture and one of the region's most straightforward remote-work visas.
+- [Moving to Finland](https://gomaterelocate.com/country-guides/finland) — A functioning, egalitarian society powered by nature, technology, and sisu.
+- [Moving to France](https://gomaterelocate.com/country-guides/france) — World-renowned cuisine, art, and lifestyle in the heart of Western Europe.
+- [Moving to Georgia](https://gomaterelocate.com/country-guides/georgia) — Legendary hospitality, stunning mountains, and one of the easiest places on Earth for foreigners to settle.
+- [Moving to Germany](https://gomaterelocate.com/country-guides/germany) — Economic powerhouse with a rich history and strict bureaucracy.
+- [Moving to Ghana](https://gomaterelocate.com/country-guides/ghana) — West Africa's stable democracy, a welcoming gateway for diaspora returnees and professionals alike.
+- [Moving to Greece](https://gomaterelocate.com/country-guides/greece) — Ancient history and island life meet chaotic charm.
+- [Moving to Guatemala](https://gomaterelocate.com/country-guides/guatemala) — The heart of the Mayan world, known for eternal spring weather and volcanoes.
+- [Moving to Honduras](https://gomaterelocate.com/country-guides/honduras) — A mountainous Central American nation of dramatic contrasts — cloud forests, Caribbean dive islands, and demanding security realities.
+- [Moving to Hong Kong](https://gomaterelocate.com/country-guides/hong-kong) — A vertical metropolis where East meets West in a frenzy of finance and food.
+- [Moving to Hungary](https://gomaterelocate.com/country-guides/hungary) — A land of thermal baths, spicy paprika, and grand architecture.
+- [Moving to Iceland](https://gomaterelocate.com/country-guides/iceland) — Land of fire and ice, offering a close-knit community in a dramatic setting.
+- [Moving to India](https://gomaterelocate.com/country-guides/india) — A subcontinent of incredible diversity, spirituality, and chaos.
+- [Moving to Indonesia](https://gomaterelocate.com/country-guides/indonesia) — An archipelago of 17,000 islands, offering everything from Bali's beaches to Jakarta's bustle.
+- [Moving to Ireland](https://gomaterelocate.com/country-guides/ireland) — The Emerald Isle, known for tech giants, cozy pubs, and literary history.
+- [Moving to Israel](https://gomaterelocate.com/country-guides/israel) — A high-tech startup nation where ancient history meets relentless innovation, set against a complex geopolitical backdrop.
+- [Moving to Italy](https://gomaterelocate.com/country-guides/italy) — The land of La Dolce Vita, offering unmatched food, history, and chaotic charm.
+- [Moving to Jamaica](https://gomaterelocate.com/country-guides/jamaica) — A vibrant island nation where culture, music, and resilience shape daily life.
+- [Moving to Japan](https://gomaterelocate.com/country-guides/japan) — A fascinating blend of ancient tradition and futuristic convenience.
+- [Moving to Jordan](https://gomaterelocate.com/country-guides/jordan) — A stable, historic kingdom balancing ancient heritage with the realities of a volatile region.
+- [Moving to Kazakhstan](https://gomaterelocate.com/country-guides/kazakhstan) — The ninth-largest country on earth — vast steppe, oil wealth, and a fast-modernizing digital state.
+- [Moving to Kenya](https://gomaterelocate.com/country-guides/kenya) — The economic hub of East Africa, offering a dynamic expat life amidst a digital revolution.
+- [Moving to Kosovo](https://gomaterelocate.com/country-guides/kosovo) — Europe's youngest country, with the continent's youngest population, a visa-free path to the EU, and a fast-modernizing Prishtina tech and cafe scene.
+- [Moving to Kuwait](https://gomaterelocate.com/country-guides/kuwait) — Tax-free, conservative, and highly expatriate — the Gulf state where the kafala system still shapes daily life.
+- [Moving to Kyrgyzstan](https://gomaterelocate.com/country-guides/kyrgyzstan) — A mountainous Central Asian republic with easy visa-free entry, low costs, and dramatic Tien Shan landscapes.
+- [Moving to Laos](https://gomaterelocate.com/country-guides/laos) — A quiet, land-locked Southeast Asian nation where Theravada Buddhism, slow rhythms, and opaque bureaucracy shape daily life.
+- [Moving to Latvia](https://gomaterelocate.com/country-guides/latvia) — A green land of forests, Art Nouveau architecture, and quiet beaches.
+- [Moving to Lebanon](https://gomaterelocate.com/country-guides/lebanon) — A cosmopolitan Mediterranean country navigating acute economic and political crisis, with extraordinary cultural depth and a vast global diaspora.
+- [Moving to Liechtenstein](https://gomaterelocate.com/country-guides/liechtenstein) — Exclusive, private, and quiet living for the selected few who can gain residence.
+- [Moving to Lithuania](https://gomaterelocate.com/country-guides/lithuania) — A booming fintech hub with affordable quality of life and great digital infrastructure.
+- [Moving to Luxembourg](https://gomaterelocate.com/country-guides/luxembourg) — A wealthy, efficient Grand Duchy where high salaries meet high housing costs.
+- [Moving to Madagascar](https://gomaterelocate.com/country-guides/madagascar) — The world's fourth largest island, biologically unique, Austronesian in language and African in geography - a country like no other.
+- [Moving to Malaysia](https://gomaterelocate.com/country-guides/malaysia) — A multicultural fusion of Malay, Chinese, and Indian cultures with modern infrastructure.
+- [Moving to Maldives](https://gomaterelocate.com/country-guides/maldives) — A tourism-driven archipelago nation where life revolves around the sea, the resort economy, and strict Islamic law.
+- [Moving to Malta](https://gomaterelocate.com/country-guides/malta) — A historic island fortress with 300 days of sun and English as an official language.
+- [Moving to Mauritius](https://gomaterelocate.com/country-guides/mauritius) — A tropical island nation blending multicultural heritage, strong institutions, and a growing digital economy in the Indian Ocean.
+- [Moving to Mexico](https://gomaterelocate.com/country-guides/mexico) — Rich culture, incredible food, and a warm, chaotic energy.
+- [Moving to Moldova](https://gomaterelocate.com/country-guides/moldova) — An underrated, wine-rich Eastern European republic on a fast EU accession track, with one of the continent's most favorable IT tax regimes.
+- [Moving to Monaco](https://gomaterelocate.com/country-guides/monaco) — Sovereign Mediterranean micro-state offering zero personal income tax and unmatched exclusivity to residents who can meet its wealth threshold.
+- [Moving to Mongolia](https://gomaterelocate.com/country-guides/mongolia) — A vast, sparsely populated steppe nation of nomadic heritage, harsh winters, and untouched wilderness.
+- [Moving to Montenegro](https://gomaterelocate.com/country-guides/montenegro) — A compact Adriatic gem where dramatic coastlines meet rugged mountains and a growing expat scene.
+- [Moving to Morocco](https://gomaterelocate.com/country-guides/morocco) — A sensory journey of souks, deserts, and mountains just a ferry ride from Europe.
+- [Moving to Namibia](https://gomaterelocate.com/country-guides/namibia) — Vast, quiet, and well-ordered, with Africa's most accessible desert landscapes and a new digital nomad visa.
+- [Moving to Nepal](https://gomaterelocate.com/country-guides/nepal) — The roof of the world, home to Everest and deep spiritual traditions.
+- [Moving to Netherlands](https://gomaterelocate.com/country-guides/netherlands) — Progressive, flat, and famously efficient with a biking culture like no other.
+- [Moving to New Zealand](https://gomaterelocate.com/country-guides/new-zealand) — Middle-earth landscapes, progressive values, and a quiet, safe life.
+- [Moving to Nicaragua](https://gomaterelocate.com/country-guides/nicaragua) — Offers a raw, affordable lifestyle for those willing to navigate developing infrastructure and heat.
+- [Moving to Nigeria](https://gomaterelocate.com/country-guides/nigeria) — Africa's largest economy and most populous nation, where entrepreneurial energy meets real infrastructure challenges.
+- [Moving to North Macedonia](https://gomaterelocate.com/country-guides/north-macedonia) — A compact Balkan republic with dramatic mountains, an ancient lake, and one of Europe's most affordable capitals.
+- [Moving to Norway](https://gomaterelocate.com/country-guides/norway) — Spectacular landscapes and high living standards in a rugged, wealthy nation.
+- [Moving to Oman](https://gomaterelocate.com/country-guides/oman) — A traditional, scenic Gulf nation that trades glitz for heritage, mountains, and Indian Ocean calm.
+- [Moving to Pakistan](https://gomaterelocate.com/country-guides/pakistan) — A land of ancient civilizations, soaring mountains, and resilient hospitality.
+- [Moving to Panama](https://gomaterelocate.com/country-guides/panama) — A global business hub with tropical weather and tax-friendly residency options.
+- [Moving to Paraguay](https://gomaterelocate.com/country-guides/paraguay) — A calm, low-cost haven with a slow pace of life and straightforward residency.
+- [Moving to Peru](https://gomaterelocate.com/country-guides/peru) — The culinary capital of South America, home to the Andes and the Amazon.
+- [Moving to Philippines](https://gomaterelocate.com/country-guides/philippines) — 7,000+ islands of turquoise water, English speakers, and endless fiestas.
+- [Moving to Poland](https://gomaterelocate.com/country-guides/poland) — Rapidly modernizing nation with deep history and vibrant cities.
+- [Moving to Portugal](https://gomaterelocate.com/country-guides/portugal) — Sun-soaked coastlines, vibrant culture, and a relaxed pace of life in Western Europe.
+- [Moving to Puerto Rico](https://gomaterelocate.com/country-guides/puerto-rico) — A US territory with Act 60 tax incentives, tropical Caribbean living, and deep Spanish-Caribbean cultural roots.
+- [Moving to Qatar](https://gomaterelocate.com/country-guides/qatar) — A peninsula of futuristic skylines and high disposable income, where life is lived indoors.
+- [Moving to Romania](https://gomaterelocate.com/country-guides/romania) — Offers incredible value and internet speeds for digital workers, amidst a mix of modern and rural life.
+- [Moving to Rwanda](https://gomaterelocate.com/country-guides/rwanda) — Africa's cleanest capital and one of its easiest places to do business, with a bold tech-hub agenda.
+- [Moving to San Marino](https://gomaterelocate.com/country-guides/san-marino) — The world's oldest surviving republic — an Italian-speaking microstate on Monte Titano, rich in tradition and heavily bureaucratic for newcomers.
+- [Moving to Saudi Arabia](https://gomaterelocate.com/country-guides/saudi-arabia) — A rapidly transforming kingdom where ancient traditions meet Vision 2030 ambition and zero income tax.
+- [Moving to Senegal](https://gomaterelocate.com/country-guides/senegal) — West Africa's democratic anchor on the Atlantic, famous for Teranga hospitality, Sufi traditions, and a rising Dakar tech scene.
+- [Moving to Serbia](https://gomaterelocate.com/country-guides/serbia) — A hospitable, affordable Balkan hub with a social, cafe-centric lifestyle.
+- [Moving to Seychelles](https://gomaterelocate.com/country-guides/seychelles) — A 115-island archipelago in the Indian Ocean with the highest GDP per capita in Africa and one of the most welcoming immigration regimes on the continent.
+- [Moving to Singapore](https://gomaterelocate.com/country-guides/singapore) — A futuristic garden city-state known for efficiency, cleanliness, and food.
+- [Moving to Slovakia](https://gomaterelocate.com/country-guides/slovakia) — Affordable Central European living with access to mountains and nature.
+- [Moving to Slovenia](https://gomaterelocate.com/country-guides/slovenia) — A green jewel nestled between the Alps and the Adriatic.
+- [Moving to South Africa](https://gomaterelocate.com/country-guides/south-africa) — A vibrant but complex country where lifestyle quality battles with infrastructure challenges.
+- [Moving to South Korea](https://gomaterelocate.com/country-guides/south-korea) — A high-tech dynamo where ancient temples sit beside futuristic skyscrapers.
+- [Moving to Spain](https://gomaterelocate.com/country-guides/spain) — Vibrant culture, sun-drenched landscapes, and a relaxed Mediterranean lifestyle.
+- [Moving to Sri Lanka](https://gomaterelocate.com/country-guides/sri-lanka) — Incredibly low cost of living and island beauty, balancing infrastructure challenges.
+- [Moving to Sweden](https://gomaterelocate.com/country-guides/sweden) — Innovation meets nature in this organized, progressive Nordic nation.
+- [Moving to Switzerland](https://gomaterelocate.com/country-guides/switzerland) — Alpine perfection with high wages and higher costs.
+- [Moving to Taiwan](https://gomaterelocate.com/country-guides/taiwan) — A friendly island democracy with world-class food, mountains, and technology.
+- [Moving to Tanzania](https://gomaterelocate.com/country-guides/tanzania) — East Africa's largest economy by geography, home to Kilimanjaro, the Serengeti, and the Swahili coast.
+- [Moving to Thailand](https://gomaterelocate.com/country-guides/thailand) — The Land of Smiles, offering tropical beaches, chaotic cities, and amazing street food.
+- [Moving to Trinidad and Tobago](https://gomaterelocate.com/country-guides/trinidad-and-tobago) — Fast-paced, culturally rich island life with strong energy-sector roots and a relaxed Tobago escape.
+- [Moving to Tunisia](https://gomaterelocate.com/country-guides/tunisia) — A blend of Arab and Mediterranean lifestyles with a low cost of living.
+- [Moving to Turkey](https://gomaterelocate.com/country-guides/turkey) — A transcontinental crossroads where ancient history, vibrant culture, and affordable living draw a growing wave of expats and digital nomads.
+- [Moving to Uganda](https://gomaterelocate.com/country-guides/uganda) — The Pearl of Africa, with mountain gorillas, the source of the Nile, and a youthful, entrepreneurial population.
+- [Moving to Ukraine](https://gomaterelocate.com/country-guides/ukraine) — Resilient Eastern European nation balancing wartime reality with ambitious digital transformation and EU integration.
+- [Moving to United Arab Emirates](https://gomaterelocate.com/country-guides/united-arab-emirates) — A tax-free, high-convenience lifestyle built on transient expat communities.
+- [Moving to United Kingdom](https://gomaterelocate.com/country-guides/united-kingdom) — A global cultural powerhouse mixing ancient tradition with modern multiculturalism.
+- [Moving to United States](https://gomaterelocate.com/country-guides/united-states) — A vast land of opportunity, diversity, and extreme contrasts.
+- [Moving to Uruguay](https://gomaterelocate.com/country-guides/uruguay) — Stable, safe, and slow-paced living with European-level costs.
+- [Moving to Uzbekistan](https://gomaterelocate.com/country-guides/uzbekistan) — Ancient Silk Road civilization reopening with rapid reform, low costs, and extraordinary heritage.
+- [Moving to Vietnam](https://gomaterelocate.com/country-guides/vietnam) — Bustling energy, incredible landscapes, and a rapidly growing economy.
+- [Moving to Zambia](https://gomaterelocate.com/country-guides/zambia) — Landlocked Southern African republic built on copper, wildlife, and a quietly remarkable record of peaceful democratic transitions.
+
+## Field Guide Articles
+### Administrative Reality
+- [How Administrative Systems Actually Work Behind the Counter](https://gomaterelocate.com/field-guide/administrative-reality/why-bureaucracy-feels-harder) — The clerk isn't being difficult. They are following a decision tree they cannot override — and understanding that tree is the difference between months of frustration and a clean process.
+- [Why Paperwork Rarely Fails Where You Expect It To](https://gomaterelocate.com/field-guide/administrative-reality/why-paperwork-fails-unexpectedly) — Having the 'right' document means nothing if the system lacks the context to read it. It's about legibility, not just validity.
+- [The Document Validity Game — Expiry Dates You Didn't Know You Had](https://gomaterelocate.com/field-guide/administrative-reality/why-timing-matters-more) — Every document in your relocation stack has a hidden expiry date. When two of them expire on different schedules, you are playing a timing game most people lose.
+- [Why Delays Are the Default, Not the Exception](https://gomaterelocate.com/field-guide/administrative-reality/why-delays-are-default) — Delays aren't accidents; they are the system's buffer. Expecting speed is the surest way to manufacture your own stress.
+### Before You Move
+- [What People Underestimate Before Moving Abroad](https://gomaterelocate.com/field-guide/before-you-move/what-people-underestimate) — It's not culture shock or language barriers—it's the invisible system dependencies that quietly catch you off guard.
+- [Why 'I'll Fix It Later' Is the Most Expensive Sentence](https://gomaterelocate.com/field-guide/before-you-move/fix-it-later-expensive) — Putting administrative decisions on hold feels harmless in the moment, but timing and order matter more than most people realize.
+- [Documents You Think You Won't Need — Until You Do](https://gomaterelocate.com/field-guide/before-you-move/documents-you-think-you-wont-need) — It's rarely the obvious documents that cause problems, but the secondary records that systems suddenly depend on.
+- [What to Sort Before You Cancel Anything at Home](https://gomaterelocate.com/field-guide/before-you-move/sort-before-cancel) — Cutting ties too early can remove options you didn't realize you'd need. Not everything should be closed just because you're leaving.
+### Common Mistakes & Delays
+- [Top 5 Relocation Mistakes](https://gomaterelocate.com/field-guide/common-mistakes-delays/mistakes-delays-1) — Most relocation mistakes don't come from a lack of effort, but from reasonable assumptions that fail in new systems.
+- [Why Delays Happen](https://gomaterelocate.com/field-guide/common-mistakes-delays/mistakes-delays-2) — Delays are rarely random bad luck--they are predictable outcomes of how complex administrative systems are designed.
+- [Budgeting Errors](https://gomaterelocate.com/field-guide/common-mistakes-delays/mistakes-delays-3) — Having the right total amount of money doesn't matter if you can't access it when and where you need it.
+- [Recovery Strategies](https://gomaterelocate.com/field-guide/common-mistakes-delays/mistakes-delays-4) — When plans go off the rails, the goal shifts from optimization to stabilization. Here is how to recover momentum.
+### Daily Life & Bureaucracy
+- [Setting Up Utilities](https://gomaterelocate.com/field-guide/daily-life-bureaucracy/daily-life-1) — Why getting the lights on is rarely just about flipping a switch, and how utilities serve as your primary proof of existence.
+- [Public Transportation](https://gomaterelocate.com/field-guide/daily-life-bureaucracy/daily-life-2) — Moving beyond the tourist map: how understanding the transit system is key to feeling like you belong.
+- [Getting a Phone Number -- Why It's Harder Than You Think](https://gomaterelocate.com/field-guide/daily-life-bureaucracy/daily-life-3) — A phone number is not a convenience -- it's a dependency. Banks need it, landlords need it, government portals need it, and getting one needs things you don't have yet.
+- [Social Etiquette](https://gomaterelocate.com/field-guide/daily-life-bureaucracy/daily-life-4) — Navigating the unwritten rules of politeness, boundaries, and how to avoid being "that" foreigner.
+### Digital Infrastructure
+- [Why Your Phone Number Is an Identity Document](https://gomaterelocate.com/field-guide/digital-infrastructure/phone-number-identity-anchor) — Banks need it, government portals need it, landlords text you on it. A phone number abroad isn't communication -- it's authentication infrastructure.
+- [Digital ID Systems -- The Gate You Didn't Know Existed](https://gomaterelocate.com/field-guide/digital-infrastructure/digital-id-systems) — Many countries have a national digital identity system that locals use for everything from taxes to doctor's appointments. As a newcomer, you are outside it -- and that blocks more than you expect.
+- [Setting Up Internet -- Why It Takes Weeks, Not Minutes](https://gomaterelocate.com/field-guide/digital-infrastructure/internet-connectivity-setup) — Home internet abroad isn't plug-and-play. Contract requirements, installation queues, and address verification mean you could wait 2-6 weeks for a connection most people take for granted.
+- [Official Mail Will Arrive in a Language You Don't Speak](https://gomaterelocate.com/field-guide/digital-infrastructure/official-mail-language-barrier) — Tax notices, registration confirmations, insurance letters, fines -- they all arrive in the local language, with deadlines, and no translation. Ignoring them is not an option.
+### Healthcare Reality
+- [Public vs. Private](https://gomaterelocate.com/field-guide/healthcare-reality/healthcare-reality-1) — Understanding the complex relationship between state-provided care and private alternatives in your new home.
+- [Registering for Healthcare](https://gomaterelocate.com/field-guide/healthcare-reality/healthcare-reality-2) — Why simply having a visa doesn't mean you have a doctor, and how to bridge the administrative gap.
+- [Emergency Services](https://gomaterelocate.com/field-guide/healthcare-reality/healthcare-reality-3) — Emergency rooms will save your life regardless of your status. Everything that happens after discharge is a different system entirely -- and that is where unregistered newcomers get stuck.
+- [Prescriptions and Pharmacies](https://gomaterelocate.com/field-guide/healthcare-reality/healthcare-reality-4) — Navigating medication access, local authority, and the role of the pharmacist in your new system.
+### Housing Reality
+- [The "Foreigner Premium" in Rentals](https://gomaterelocate.com/field-guide/housing-reality/foreigner-premium-rentals) — Identifying when you are being overcharged simply because you are new to the market, and why listing prices don't always equal rental prices.
+- [Furnished vs. Unfurnished: The Hidden Costs](https://gomaterelocate.com/field-guide/housing-reality/furnished-vs-unfurnished) — Why "unfurnished" in some countries means no light fixtures and no kitchen sink, and the true cost of setting up a home from scratch.
+- [Guarantors and Deposits](https://gomaterelocate.com/field-guide/housing-reality/guarantors-and-deposits) — How to rent an apartment when you have no local credit history, no family to sign for you, and why cash flow matters more than affordability.
+- [Scams and Red Flags](https://gomaterelocate.com/field-guide/housing-reality/housing-scams-red-flags) — Common rental scams targeting expats, how to spot them before you pay, and why "too good to be true" is the only rule that matters.
+### How GoMate Fits In
+- [Our Mission](https://gomaterelocate.com/field-guide/how-gomate-fits-in/how-gomate-1) — We built GoMate because moving abroad means drowning in information while starving for context — and no checklist can replace understanding how systems actually connect.
+- [Features Overview](https://gomaterelocate.com/field-guide/how-gomate-fits-in/how-gomate-2) — A functional look at how the platform works: mapping the terrain so you can navigate it.
+- [Community Support](https://gomaterelocate.com/field-guide/how-gomate-fits-in/how-gomate-3) — The role of shared experience: how to use community wisdom without relying on anecdotal evidence.
+- [Future Plans](https://gomaterelocate.com/field-guide/how-gomate-fits-in/how-gomate-4) — Where GoMate is headed -- deeper intelligence per country, better timing awareness, and the same principle: depth over breadth, always.
+### Money, Banking & Payments
+- [Opening a Bank Account: The Gatekeeper](https://gomaterelocate.com/field-guide/money-banking-payments/opening-bank-account) — Why opening a bank account is often the single hardest administrative task for a newcomer, and how to navigate the "proof of address" paradox.
+- [Transferring Money Across Borders](https://gomaterelocate.com/field-guide/money-banking-payments/transferring-money-abroad) — Why your money doesn't move as fast as you do, and how to prevent your life savings from getting stuck in "compliance limbo."
+- [Currency Exchange: The Silent Tax](https://gomaterelocate.com/field-guide/money-banking-payments/currency-exchange-silent-tax) — How small percentages on exchange rates destroy your purchasing power, and why "zero commission" is a marketing lie.
+- [Taxes Abroad: The Unknown Liability](https://gomaterelocate.com/field-guide/money-banking-payments/taxes-abroad-unknown-liability) — Understanding tax residency, double taxation, and why "digital nomad" is often a tax status that doesn't exist.
+- [Credit History Doesn't Cross Borders](https://gomaterelocate.com/field-guide/money-banking-payments/credit-history-doesnt-cross-borders) — Your US FICO score is useless in Germany. Your Swedish UC rating doesn't exist in Spain. Here's what to do about the reset.
+- [Pension Portability: What Follows You, What Doesn't](https://gomaterelocate.com/field-guide/money-banking-payments/pension-portability) — The money you've paid into retirement systems is more portable than you think -- and less portable than you hope.
+### Moving With Someone
+- [Spouse Visas](https://gomaterelocate.com/field-guide/moving-with-someone/moving-with-someone-1) — The reality of dependent status: understanding the legal and emotional implications of being the "trailing spouse".
+- [Moving with Kids](https://gomaterelocate.com/field-guide/moving-with-someone/moving-with-someone-2) — Why relocating a family is not just moving a household, but transplanting a delicate ecosystem of routine and education.
+- [Moving with Pets](https://gomaterelocate.com/field-guide/moving-with-someone/moving-with-someone-3) — When your family member is a biosecurity risk: navigating the strict, emotionless world of animal import.
+- [Relationship Advice](https://gomaterelocate.com/field-guide/moving-with-someone/moving-with-someone-4) — The silent strain of relocation: why moving abroad is the ultimate stress test for any partnership.
+### Returning Home
+- [Reverse Culture Shock](https://gomaterelocate.com/field-guide/returning-home/returning-home-1) — You expect relief. Instead you get friction -- because home changed, and so did you, and neither side got the memo.
+- [Why Your International Experience Doesn't Translate Back](https://gomaterelocate.com/field-guide/returning-home/returning-home-2) — You gained years of real-world skills abroad. Your home country's systems don't have a field for that.
+- [The Reverse Migration Checklist Nobody Gives You](https://gomaterelocate.com/field-guide/returning-home/returning-home-3) — Leaving a country is an administrative process with the same complexity as arriving -- but without a guide, because everyone assumes going home is simple.
+- [Why Your Legal Identity Doesn't Follow You Home](https://gomaterelocate.com/field-guide/returning-home/returning-home-4) — You built a credit history, a driving record, and a professional reputation abroad. Almost none of it transfers back automatically.
+### Visas & Status
+- [Why Visa Categories Rarely Mean What People Think](https://gomaterelocate.com/field-guide/visas-status/visas-status-1) — Visa labels sound clear, but in practice they describe intent—not how your everyday life will actually work.
+- [Why Status Is About More Than Approval](https://gomaterelocate.com/field-guide/visas-status/visas-status-2) — Getting approved is only one moment. What happens after approval is where most misunderstandings begin.
+- [Why 'Staying Legal' Isn't a Static State](https://gomaterelocate.com/field-guide/visas-status/visas-status-3) — Legal status isn't something you lock in once — it shifts with your job, your address, your relationship, and a dozen conditions you agreed to but never read.
+- [Why 'Permanent' Rarely Means What People Expect](https://gomaterelocate.com/field-guide/visas-status/visas-status-4) — Permanent residency sounds like an ending. In practice, it comes with conditions, maintenance requirements, and expiry risks that most people discover too late.
+### Work & Income Reality
+- [Job Hunting Abroad](https://gomaterelocate.com/field-guide/work-income-reality/work-income-1) — Why employability and eligibility are two different things, and how the "local preference" filter works in practice.
+- [Work Permits](https://gomaterelocate.com/field-guide/work-income-reality/work-income-2) — Understanding the tether between your job and your right to stay, and why a work permit is rarely a blank check.
+- [Remote Work](https://gomaterelocate.com/field-guide/work-income-reality/work-income-3) — Why "working from anywhere" is a marketing concept, not a legal reality, and the hidden risks of the digital nomad lifestyle.
+- [Freelancing](https://gomaterelocate.com/field-guide/work-income-reality/work-income-4) — The administrative reality of being your own boss in a foreign system: autonomy comes with a heavy paperwork tax.

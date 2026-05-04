@@ -1,0 +1,173 @@
+DNS records
+Child nameservers
+DNSSEC
+DNS history
+Your domain will be online soon
+It can take anywhere from 15 minutes to 24 hours for domains to start working after DNS changes. Once this happens, your website will be accessible via gomaterelocate.com.
+
+More details
+Nameservers
+
+Nameservers handle internet requests for your domain. You can use Hostinger nameservers or use custom nameservers to point to other hosting provider.
+
+ns1.dns-parking.com
+
+ns2.dns-parking.com
+
+
+Change Nameservers
+Manage DNS records
+These records define how your domain behaves. Common uses include pointing your domain at web servers or configuring email delivery for your domain.
+
+
+Export
+
+Import
+Type
+A
+Name
+@
+Points to
+TTL
+14400
+
+Add Record
+Search
+Type
+Name
+Priority
+Content
+TTL
+TXT	
+resend._domainkey	
+0	
+"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHCO+nNkmYFfGb+JlKTNIds+0Pe+M4InS/K/fti2147XC3S+2wWfY8IY5HxfRrulANLzKZXjntiUEottrntRqhGL4ln/p6lpEmNge8Ogr7RBd/CpthKdrRH5AJ8OMPW3Kc1LslAeCbroMprFZhQXVK9OnuKGyS7t1r6idXOnhL7wIDAQAB"	
+14400	
+
+Delete
+Edit
+CNAME	
+hostingermail-c._domainkey	
+0	
+hostingermail-c.dkim.mail.hostinger.com	
+300	
+
+Delete
+Edit
+CNAME	
+hostingermail-b._domainkey	
+0	
+hostingermail-b.dkim.mail.hostinger.com	
+300	
+
+Delete
+Edit
+CNAME	
+hostingermail-a._domainkey	
+0	
+hostingermail-a.dkim.mail.hostinger.com	
+300	
+
+Delete
+Edit
+CNAME	
+www	
+0	
+gomaterelocate.com	
+14400	
+
+Delete
+Edit
+CNAME	
+autodiscover	
+0	
+autodiscover.mail.hostinger.com	
+300	
+
+Delete
+Edit
+CNAME	
+autoconfig	
+0	
+autoconfig.mail.hostinger.com	
+300	
+
+Delete
+Edit
+TXT	
+send	
+0	
+"v=spf1 include:amazonses.com ~all"	
+3600	
+
+Delete
+Edit
+MX	
+send	
+10	
+feedback-smtp.eu-west-1.amazonses.com	
+3600	
+
+Delete
+Edit
+TXT	
+_dmarc	
+0	
+"v=DMARC1; p=none"	
+3600	
+
+Delete
+Edit
+TXT	
+@	
+0	
+"v=spf1 include:_spf.mail.hostinger.com ~all"	
+14400	
+
+Delete
+Edit
+TXT	
+@	
+0	
+"replit-verify=a6516d33-6d7e-49b9-aae8-a944ab4dfcf4"	
+14400	
+
+Delete
+Edit
+TXT	
+@	
+0	
+"google-site-verification=fx7veaQ11_ybVXpPI1rayuro2hE15sMVDBcrcnh05kc"	
+14400	
+
+Delete
+Edit
+MX	
+@	
+5	
+mx1.hostinger.com	
+14400	
+
+Delete
+Edit
+MX	
+@	
+10	
+mx2.hostinger.com	
+14400	
+
+Delete
+Edit
+A	
+@	
+0	
+34.111.179.208	
+14400	
+
+Delete
+Edit
+Reset DNS records
+
+This feature resets all existing DNS records of gomaterelocate.com to default.
+
+

@@ -1,0 +1,37 @@
+(index):1 Access to fetch at 'https://xnwcoeydkcckekmxcbcj.supabase.co/functions/v1/chat' from origin 'https://gomatelandingpage.replit.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gomaterelocate.com' that is not equal to the supplied origin. Have the server send the header with a valid value.Understand this error
+xnwcoeydkcckekmxcbcj.supabase.co/functions/v1/chat:1  Failed to load resource: net::ERR_FAILEDUnderstand this error
+index-CgxAu_uR.js:62 Chat Error: TypeError: Failed to fetch
+    at Object.apply (index.js:1:804)
+    at x (index-CgxAu_uR.js:62:125)
+    at x (index-CgxAu_uR.js:104:964)
+    at C (index-CgxAu_uR.js:104:1033)
+    at f0 (index-CgxAu_uR.js:9:117251)
+    at index-CgxAu_uR.js:9:122365
+    at xp (index-CgxAu_uR.js:9:9040)
+    at zf (index-CgxAu_uR.js:9:118485)
+    at Kf (index-CgxAu_uR.js:10:26582)
+    at fC (index-CgxAu_uR.js:10:26404)
+x @ index-CgxAu_uR.js:62Understand this error
+(index):1 Access to fetch at 'https://xnwcoeydkcckekmxcbcj.supabase.co/functions/v1/chat' from origin 'https://gomatelandingpage.replit.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: The 'Access-Control-Allow-Origin' header has a value 'https://gomaterelocate.com' that is not equal to the supplied origin. Have the server send the header with a valid value.Understand this error
+index.js:1  POST https://xnwcoeydkcckekmxcbcj.supabase.co/functions/v1/chat net::ERR_FAILED
+apply @ index.js:1
+x @ index-CgxAu_uR.js:62
+x @ index-CgxAu_uR.js:104
+C @ index-CgxAu_uR.js:104
+f0 @ index-CgxAu_uR.js:9
+(anonymous) @ index-CgxAu_uR.js:9
+xp @ index-CgxAu_uR.js:9
+zf @ index-CgxAu_uR.js:9
+Kf @ index-CgxAu_uR.js:10
+fC @ index-CgxAu_uR.js:10Understand this error
+index-CgxAu_uR.js:62 Chat Error: TypeError: Failed to fetch
+    at Object.apply (index.js:1:804)
+    at x (index-CgxAu_uR.js:62:125)
+    at x (index-CgxAu_uR.js:104:964)
+    at C (index-CgxAu_uR.js:104:1033)
+    at f0 (index-CgxAu_uR.js:9:117251)
+    at index-CgxAu_uR.js:9:122365
+    at xp (index-CgxAu_uR.js:9:9040)
+    at zf (index-CgxAu_uR.js:9:118485)
+    at Kf (index-CgxAu_uR.js:10:26582)
+    at fC (index-CgxAu_uR.js:10:26404)

@@ -1,0 +1,158 @@
+		
+Type
+
+Name
+
+Content
+
+Proxy status
+
+
+
+TTL
+
+Actions
+
+A
+gomaterelocate.com
+34.111.179.208
+
+Proxied
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+CNAME
+autoconfig
+autoconfig.mail.hostinger.com
+
+Proxied
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+CNAME
+autodiscover
+autodiscover.mail.hostinger.com
+
+Proxied
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+
+CNAME
+hostingermail-a._domainkey
+hostingermail-a.dkim.mail.hostinger.com
+
+Proxied
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+
+CNAME
+hostingermail-b._domainkey
+hostingermail-b.dkim.mail.hostinger.com
+
+Proxied
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+
+CNAME
+hostingermail-c._domainkey
+hostingermail-c.dkim.mail.hostinger.com
+
+Proxied
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+CNAME
+www
+gomaterelocate.com
+
+Proxied
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+MX
+gomaterelocate.com
+mx2.hostinger.com
+
+10
+DNS only
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+MX
+gomaterelocate.com
+mx1.hostinger.com
+
+5
+DNS only
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+MX
+send
+feedback-smtp.eu-west-1.amazonses.com
+
+10
+DNS only
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+TXT
+_dmarc
+"v=DMARC1; p=none"
+DNS only
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+TXT
+gomaterelocate.com
+"v=spf1 include:_spf.mail.hostinger.com ~all"
+DNS only
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+TXT
+gomaterelocate.com
+"replit-verify=a6516d33-6d7e-49b9-aae8-a944ab4dfcf4"
+DNS only
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+TXT
+gomaterelocate.com
+"google-site-verification=fx7veaQ11_ybVXpPI1rayuro2hE15sMVDBcrcnh05kc"
+DNS only
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+TXT
+resend._domainkey
+"p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHCO+nNkmYFfGb+JlKTNIds+0Pe+M4InS/K/fti2147XC3S+2wWfY8IY5HxfRrulANLzKZXjntiUEottrntRqhGL4ln/p6lpEmNge8Ogr7RBd/CpthKdrRH5AJ8OMPW3Kc1LslAeCbroMprFZhQXVK9OnuKGyS7t1r6idXOnhL7wIDAQAB"
+DNS only
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.
+
+TXT
+send
+"v=spf1 include:amazonses.com ~all"
+DNS only
+
+Auto
+EditWhen toggled open, an additional table row will be added below this row to enable editing DNS records.

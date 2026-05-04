@@ -1,0 +1,192 @@
+// Public chat function with CORS for gomaterelocate.com
+// Matches frontend contract: accepts { messages, temperature, max_tokens OR max_completion_tokens }
+// Responds with { content: string }
+// No auth required. Uses server-side OPENAI_API_KEY if present.
+
+const ALLOWED_ORIGINS = new Set([
+  'https://gomaterelocate.com',
+  'gomaterelocate.com',
+  'https://www.gomaterelocate.com',
+  'http://localhost:3000',
+  'http://localhost:5173',
+  'http://127.0.0.1:5173',
+  'https://gomatelandingpage.replit.app/',
+]);
+
+function corsHeaders(origin?: string | null) {
+  const allowOrigin = origin && ALLOWED_ORIGINS.has(origin) ? origin : 'https://gomaterelocate.com';
+  return {
+    'Access-Control-Allow-Origin': allowOrigin,
+    'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+    'Access-Control-Allow-Credentials': 'true',
+    'Vary': 'Origin',
+    'Content-Type': 'application/json',
+    'Connection': 'keep-alive',
+  } as Record<string, string>;
+}
+
+function ok(body: unknown, origin?: string | null) {
+  return new Response(JSON.stringify(body), { status: 200, headers: corsHeaders(origin) });
+}
+function badRequest(message: string, origin?: string | null) {
+  return new Response(JSON.stringify({ error: message }), { status: 400, headers: corsHeaders(origin) });
+}
+function methodNotAllowed(origin?: string | null) {
+  return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405, headers: corsHeaders(origin) });
+}
+
+console.info('chat function (public) starting');
+
+type ChatMessage = { role: 'system' | 'user' | 'assistant'; content: string };
+
+// --- DEBUG HELPERS (no behavior change) ---
+function truncate(s: string, n = 2000) {
+  return s.length > n ? s.slice(0, n) + '…(truncated)' : s;
+}
+function safeKeys(obj: any) {
+  try {
+    return obj && typeof obj === 'object' ? Object.keys(obj) : null;
+  } catch {
+    return null;
+  }
+}
+// ----------------------------------------
+
+async function runLLM(
+  messages: ChatMessage[],
+  temperature = 0.7,
+  max_completion_tokens = 1000
+): Promise<string> {
+  const apiKey = Deno.env.get('OPENAI_API_KEY');
+
+  if (!apiKey) {
+    const lastUser = [...messages].reverse().find(m => m.role === 'user');
+    const hint = lastUser?.content?.slice(0, 200) ?? '';
+    return `Thanks for reaching out to GoMate! I received your message${hint ? `: "${hint}"` : ''}.`;
+  }
+
+  const payload = {
+    model: 'gpt-4o-mini',
+    messages,
+    temperature,
+    max_completion_tokens,
+  };
+
+  // DEBUG: log request metadata (not the full prompt)
+  console.log('OpenAI request', {
+    model: payload.model,
+    temperature: payload.temperature,
+    max_completion_tokens: payload.max_completion_tokens,
+    messages_count: Array.isArray(messages) ? messages.length : 0,
+    last_role: messages?.[messages.length - 1]?.role,
+    last_len: (messages?.[messages.length - 1]?.content ?? '').length,
+  });
+
+  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify(payload),
+  });
+
+  console.log('OpenAI HTTP', {
+    status: res.status,
+    statusText: res.statusText,
+    contentType: res.headers.get('content-type'),
+    requestId: res.headers.get('x-request-id') || res.headers.get('request-id'),
+  });
+
+  // IMPORTANT: read raw body ONCE so we can log it exactly.
+  const raw = await res.text().catch(() => '');
+
+  // DEBUG: log raw response preview always (even for 200)
+  console.log('OpenAI raw preview', truncate(raw, 2000));
+
+  if (!res.ok) {
+    console.error('OpenAI error:', res.status, truncate(raw, 2000));
+    throw new Error('Upstream AI error');
+  }
+
+  let data: any = null;
+  try {
+    data = raw ? JSON.parse(raw) : null;
+  } catch (e) {
+    console.error('OpenAI non-JSON response (status 200)', {
+      parse_error: String((e as any)?.message ?? e),
+      raw_preview: truncate(raw, 2000),
+    });
+    throw new Error('Empty AI response');
+  }
+
+  // DEBUG: log response shape (keys + choice preview)
+  console.log('OpenAI JSON shape', {
+    topKeys: safeKeys(data),
+    hasChoices: Array.isArray(data?.choices),
+    choicesLen: Array.isArray(data?.choices) ? data.choices.length : null,
+    choice0Keys: data?.choices?.[0] ? safeKeys(data.choices[0]) : null,
+    messageKeys: data?.choices?.[0]?.message ? safeKeys(data.choices[0].message) : null,
+    finishReason: data?.choices?.[0]?.finish_reason ?? null,
+  });
+
+  // DEBUG: log the main content candidates we might be missing
+  console.log('OpenAI content candidates', {
+    messageContent: data?.choices?.[0]?.message?.content ?? null,
+    deltaContent: data?.choices?.[0]?.delta?.content ?? null,
+    text: data?.choices?.[0]?.text ?? null,
+  });
+
+  const text = data?.choices?.[0]?.message?.content?.trim();
+  if (!text) throw new Error('Empty AI response');
+  return text;
+}
+
+Deno.serve(async (req: Request) => {
+  const origin = req.headers.get('origin');
+
+  if (req.method === 'OPTIONS') {
+    return new Response(null, { status: 204, headers: corsHeaders(origin) });
+  }
+  if (req.method === 'GET') {
+    return ok({ status: 'ok', message: 'chat is public' }, origin);
+  }
+  if (req.method !== 'POST') {
+    return methodNotAllowed(origin);
+  }
+
+  let payload: any;
+  try {
+    payload = await req.json();
+  } catch {
+    return badRequest('Invalid JSON', origin);
+  }
+
+  const messages = Array.isArray(payload?.messages) ? (payload.messages as ChatMessage[]) : null;
+  const temperature = typeof payload?.temperature === 'number' ? payload.temperature : 0.7;
+
+  // accept both old + new param names
+  const max_completion_tokens =
+    typeof payload?.max_completion_tokens === 'number'
+      ? payload.max_completion_tokens
+      : (typeof payload?.max_tokens === 'number' ? payload.max_tokens : 1000);
+
+  if (!messages || messages.length === 0) {
+    return badRequest('Missing messages array', origin);
+  }
+
+  const safeTemp = Math.min(Math.max(temperature, 0), 1);
+  const safeMax = Math.min(Math.max(max_completion_tokens, 1), 2000); // you can raise this if you want
+
+  try {
+    const content = await runLLM(messages, safeTemp, safeMax);
+    return ok({ content }, origin);
+  } catch (e) {
+    console.error('Chat function error:', e);
+    return new Response(JSON.stringify({ error: 'AI service unavailable' }), {
+      status: 502,
+      headers: corsHeaders(origin),
+    });
+  }
+});

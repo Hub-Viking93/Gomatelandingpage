@@ -1,0 +1,66 @@
+Two surgical updates to the marketing site. Apply ONLY these — do NOT                                                 
+  touch anything else, especially do NOT remove or modify any disclaimers.                                              
+                                                                  
+  UPDATE 1: Hero copy on HomePage.jsx                                                                                   
+                                                                  
+  Find the current hero text:
+  "GoMate is a relocation intelligence platform. We help you understand
+  what moving to another country actually involves — the systems, the                                                   
+  deadlines, the things no one tells you until you're already there."
+                                                                                                                        
+  Replace with:                                                                                                         
+  "GoMate is an AI relocation tool that does what a $5,000–15,000 human
+  consultant does — visa research, document preparation, compliance                                                     
+  tracking, settling-in coordination — using a multi-agent system                                                       
+  grounded in official sources. What took weeks of consultant calls and
+  paperwork, now done in 30 minutes."                                                                                   
+                                                                                                                        
+  UPDATE 2: Tagline / meta description / og:description
+                                                                                                                        
+  Find any occurrence of "relocation intelligence platform" or                                                          
+  "relocation platform" in:
+  - <meta name="description">                                                                                           
+  - <meta property="og:description">                              
+  - <title>                                                                                                             
+  - Any other prominent positioning copy                          
+                                                                                                                        
+  Replace with: "AI relocation tool"
+                                                                                                                        
+  DO NOT WRITE THE FOLLOWING (legal + brand consistency reasons):                                                       
+  
+  - "Our team" / "we are a team" / "the GoMate team" — implies human                                                    
+    staff that doesn't exist. We are a software product.          
+  - "Our consultants" / "our experts" / "our advisors" — implies                                                        
+    licensed humans. We are not. Immigration consulting is regulated;                                                   
+    we cannot imply licensed status.                                                                                    
+  - "GoMate consultants will..." — same liability issue.                                                                
+  - "We help you" / "we do X" framed as if a person does it — always                                                    
+    frame as the software/AI doing the work.                                                                            
+                                                                                                                        
+  ACCEPTABLE alternatives:                                                                                              
+  - "GoMate (the tool) does X"                                                                                          
+  - "The AI agents handle X"                                                                                            
+  - "Multi-agent system performs X"
+  - "Built by relocators, for relocators" (acceptable founder language                                                  
+    if needed in About, but NOT in product positioning)                                                                 
+                                                                                                                        
+  DO NOT TOUCH:                                                                                                         
+  - Any disclaimer text on Pricing page (the "in development" note,                                                     
+    beta access disclaimers, etc.)                                
+  - The Field Guide articles                                                                                            
+  - Country guide content
+  - WaitlistSignup component                                                                                            
+  - Privacy policy / Terms / Disclaimer pages (any /legal/* routes)
+  - The "We do not file applications on your behalf" type language                                                      
+    anywhere — that's load-bearing legal protection
+  - Pricing tiers or pricing copy                                                                                       
+  - AIChatContext.jsx system prompts                              
+                                                                                                                        
+  DISCLAIMER PRESERVATION CHECK:
+                                                                                                                        
+  After edits, grep for these patterns and verify counts didn't decrease:                                               
+  - "do not provide legal advice"
+  - "official sources" (must remain)                                                                                    
+  - "individual circumstances"                                                                                          
+  - "subject to" (terms language)
+  - "in development" (beta disclosure) 
