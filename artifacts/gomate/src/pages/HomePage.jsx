@@ -54,6 +54,29 @@ const HomePage = () => {
       </Helmet>
 
       <main>
+        {/* Beta Banner */}
+        <a
+          href={APP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block bg-sage-700 hover:bg-sage-600 text-white transition-colors"
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-col sm:flex-row items-center justify-center gap-x-4 gap-y-1 text-center text-sm md:text-base">
+            <span className="inline-flex items-center gap-2">
+              <span className="inline-block px-2 py-0.5 rounded-full bg-white/15 text-xs font-semibold tracking-wide uppercase">
+                Beta
+              </span>
+              <span className="font-medium">
+                The GoMate app is live — try it out for free during beta.
+              </span>
+            </span>
+            <span className="inline-flex items-center gap-1 font-semibold underline-offset-4 group-hover:underline">
+              Open the app
+              <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+            </span>
+          </div>
+        </a>
+
         {/* Hero Section */}
         <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden py-20">
           {/* Full Screen Image Carousel Background */}
