@@ -93,16 +93,16 @@ const HomePage = () => {
             duration: 1.0,
             ease: 'easeOut'
           }} className="max-w-5xl mx-auto">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 leading-tight drop-shadow-2xl">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-10 leading-tight drop-shadow-2xl">
                 GoMate
               </h1>
 
-              <p className="text-xl md:text-2xl text-stone-100 mb-12 leading-relaxed max-w-3xl mx-auto drop-shadow-lg font-light">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white font-serif font-light leading-snug max-w-3xl mx-auto drop-shadow-lg">
                 Move abroad with the full picture.
-                <br />
-                125+ country guides covering the systems that actually run people's lives — visas, banking, healthcare, and the local rules no one warns you about.
-                <br />
-                <em className="italic">Just Go Mate.</em>
+              </p>
+
+              <p className="mt-6 mb-12 text-lg md:text-xl italic text-white/70 font-serif tracking-wide drop-shadow">
+                Just Go Mate.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -167,7 +167,7 @@ const HomePage = () => {
                 What is GoMate?
               </h2>
               <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-                GoMate is a relocation intelligence platform. We help you understand what moving to another country actually involves — the systems, the deadlines, the things no one tells you until you're already there.
+                125+ country guides covering the systems that actually run people's lives — visas, banking, healthcare, and the local rules no one warns you about.
               </p>
             </motion.div>
 
