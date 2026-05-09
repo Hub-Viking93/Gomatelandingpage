@@ -144,15 +144,15 @@ const FAQPage = () => {
       questions: [
         {
           q: "What does GoMate cost?",
-          a: "The website — including all 125+ country guides, the field guide, and the compare tool — is completely free, forever. The GoMate App has three tiers: Free ($0, basic interview and profile), Pro Single ($29 one-time, full research + guide generation for one plan), and Pro+ ($29/month, unlimited plans + post-arrival features). See our Pricing page for the full breakdown."
+          a: "The website — including all 125+ country guides, the Field Guide, and the compare tool — is free, forever. The GoMate App has two tiers: Free ($0) for building a profile and previewing a plan, and Move Pass ($29, one-time) for the full plan, documents, blockers, and next steps for one active relocation. See the Pricing page for details."
         },
         {
-          q: "What's the difference between Free, Pro Single, and Pro+?",
-          a: "Free lets you complete the AI interview and build a profile. Pro Single unlocks visa research, cost-of-living analysis, a full PDF guide, document checklists, and a pre-move timeline for one relocation plan. Pro+ adds everything in Pro Single plus unlimited plans, post-arrival task management, compliance alerts, a post-arrival AI assistant, and wellbeing check-ins."
+          q: "What's the difference between Free and Move Pass?",
+          a: "Free lets you build a profile, browse country guides, and preview a relocation plan. Move Pass unlocks the full plan for one active move: source-backed next steps, missing documents, blockers, readiness, and a pre-move workspace."
         },
         {
           q: "Are there any hidden fees?",
-          a: "No. The website is free with no paywalls. App pricing is listed transparently on the Pricing page. Pro+ bundles offer discounts: 3 months for $69, 6 months for $119, or annual for $199."
+          a: "No. The website is free with no paywalls. Move Pass is a single $29 unlock for one move — there's no subscription and no recurring billing."
         },
         {
           q: "Do you offer paid 1-on-1 consultations?",

@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Check, Minus, ArrowRight } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { APP_URL } from '@/lib/config';
 
@@ -11,76 +11,99 @@ const tiers = [
     name: 'Free',
     price: '$0',
     period: '',
-    description: 'Explore your options',
+    description: 'Explore before you commit',
     highlight: false,
     features: [
-      'Full AI chat interview',
-      'Profile building (65+ fields)',
-      'Basic relocation overview',
-      'All 125+ country guides',
-      'Field Guide articles',
+      'Build your profile and tell us about your move',
+      'Browse 125+ country guides',
+      'See a preview of your relocation plan',
+      'Read the Field Guide',
     ],
-    limits: '1 plan. No multi-agent research, guides, or post-arrival features.',
-    cta: 'Try Free',
+    limits: 'For exploring. The full move plan stays locked.',
+    cta: 'Start free',
     ctaLink: APP_URL,
     ctaExternal: true,
   },
   {
-    name: 'Pro',
-    price: '$39',
-    period: '/month',
-    description: 'Your AI relocation consultant team',
+    name: 'Move Pass',
+    price: '$29',
+    period: ' one-time',
+    description: 'Everything you need for one real move',
     highlight: true,
     features: [
-      'Multi-agent extraction (no hallucination)',
-      '13 specialist research agents',
-      'Visa recommendations grounded in official sources',
-      'Inline citations (Migrationsverket, Skatteverket, etc.)',
-      'Cost of living + budget planner',
-      'Document checklist with apostille tracking',
-      'Pre-departure timeline',
-      'Post-arrival settling-in (DAG-based tasks)',
-      'Compliance alerts + iCal export',
-      'Audit trail per recommendation',
-      'Unlimited relocation plans',
-      'Email reminders + document templates',
+      'A full plan for your move, from now to landing in your new country',
+      'Step-by-step next actions, with sources you can check yourself',
+      'A list of every document you still need to get',
+      'Warnings when something could delay or block your move',
+      'One place to track your plan, documents, and timeline',
     ],
-    limits: 'Full platform access. Cancel anytime.',
-    cta: 'Start Pro',
+    limits: 'Covers one move. If you ever move again, that’s a separate Move Pass.',
+    cta: 'Unlock Move Pass',
     ctaLink: APP_URL,
     ctaExternal: true,
   },
 ];
 
-const bundles = [
-  { plan: 'Monthly', price: '$39/mo', perMonth: '$39', savings: null },
-  { plan: 'Annual', price: '$299/year', perMonth: '$25', savings: '36%' },
+const whatYouGet = [
+  {
+    title: 'You always know what to do next',
+    body: 'GoMate tells you what to do this week — not just what’s possible in theory.',
+  },
+  {
+    title: 'Every step is backed by a real source',
+    body: 'Visa and tax steps link to the actual government website, so you can double-check anything yourself.',
+  },
+  {
+    title: 'You see which documents you’re still missing',
+    body: 'A live list of every document you still need to gather, in the order you’ll need them.',
+  },
+  {
+    title: 'You catch problems before they cost you',
+    body: 'If something could delay your visa or block your move, you see it early — not after you’ve booked the flight.',
+  },
+  {
+    title: 'You know how ready you actually are',
+    body: 'See how close you are to actually moving — not just to having a plan on paper.',
+  },
+  {
+    title: 'Everything for your move in one place',
+    body: 'Your profile, plan, documents, and timeline all live in one workspace for your move.',
+  },
 ];
 
-const featureMatrix = [
-  { feature: 'Chat interview', free: true, pro: true },
-  { feature: 'Country guides browsing', free: true, pro: true },
-  { feature: 'Field Guide articles', free: true, pro: true },
-  { feature: 'Multi-agent extraction', free: false, pro: true },
-  { feature: 'Visa specialist agent', free: false, pro: true },
-  { feature: 'Tax strategist agent', free: false, pro: true },
-  { feature: 'Documents specialist (apostille)', free: false, pro: true },
-  { feature: 'Cost of living analysis', free: false, pro: true },
-  { feature: 'Budget planner + affordability', free: false, pro: true },
-  { feature: 'Inline citations to official sources', free: false, pro: true },
-  { feature: 'Audit trail per recommendation', free: false, pro: true },
-  { feature: 'Personalized relocation guide', free: false, pro: true },
-  { feature: 'Document checklist + apostille tracking', free: false, pro: true },
-  { feature: 'Pre-departure timeline', free: false, pro: true },
-  { feature: 'Plan consistency checks (17 rules)', free: false, pro: true },
-  { feature: 'Settling-in tasks (DAG)', free: false, pro: true },
-  { feature: 'Compliance alerts + iCal export', free: false, pro: true },
-  { feature: 'Post-arrival AI assistant', free: false, pro: true },
-  { feature: 'Visa application tracker', free: false, pro: true },
-  { feature: 'Banking + tax registration wizards', free: false, pro: true },
-  { feature: 'Wellbeing check-ins (stage-aware)', free: false, pro: true },
-  { feature: 'Email reminders + document templates', free: false, pro: true },
-  { feature: 'Unlimited relocation plans', free: false, pro: true },
+const builtFor = [
+  'You’re moving on your own (not a corporate relocation)',
+  'You know where you’re going, or you’re close to deciding',
+  'You’re planning to actually move in the next few months',
+];
+
+const notForNow = [
+  'You’re casually browsing many different countries',
+  'Your company is handling your relocation',
+  'You haven’t decided where you want to go yet',
+];
+
+const pricingFaq = [
+  {
+    q: 'Is Move Pass a subscription?',
+    a: 'No. You pay $29 once. There’s no monthly fee and nothing to cancel.',
+  },
+  {
+    q: 'What do I actually get for $29?',
+    a: 'Your full plan for one move: what to do next, which documents you still need, what could go wrong, and one place to track everything from now until you arrive.',
+  },
+  {
+    q: 'What if I end up moving again later?',
+    a: 'Move Pass covers one move. If you decide to move again, you’d buy a separate Move Pass for that move.',
+  },
+  {
+    q: 'What if I haven’t picked a country yet?',
+    a: 'Start with Free. Build your profile, browse country guides, and see a preview of a plan. Buy Move Pass when you know where you’re going.',
+  },
+  {
+    q: 'Does GoMate replace an immigration lawyer?',
+    a: 'No. GoMate gives you structure, official sources, and a clear plan. For tricky legal questions, talk to a real immigration lawyer. Each country guide includes a directory of professionals you can contact.',
+  },
 ];
 
 const PricingPage = () => {
@@ -88,9 +111,9 @@ const PricingPage = () => {
     <>
       <Helmet>
         <title>Pricing — GoMate</title>
-        <meta name="description" content="GoMate pricing: Free for profile building + 125 country guides, Pro at $39/mo for the full AI relocation consultant team. Replace a $5,000 relocation agency for 1% of the cost." />
+        <meta name="description" content="GoMate pricing: start free to explore. Buy Move Pass for $29 to get a full plan for one move — what to do next, which documents you need, and what could go wrong." />
         <meta property="og:title" content="Pricing — GoMate" />
-        <meta property="og:description" content="Free for browsing + profile building. Pro at $39/mo for the full AI relocation consultant team." />
+        <meta property="og:description" content="Free to explore. $29 Move Pass for one real move." />
         <meta property="og:image" content="https://raw.githubusercontent.com/Hub-Viking93/gomatelogo/626b0079bd23e19b026f898fdd9353dfe7aae4d9/GoMateLogo.png" />
         <meta property="og:locale" content="en_US" />
       </Helmet>
@@ -109,7 +132,7 @@ const PricingPage = () => {
                 Pricing
               </h1>
               <p className="text-lg text-stone-600 max-w-2xl mx-auto leading-relaxed">
-                A relocation agency costs $2,000–5,000 and focuses on corporations. GoMate gives individuals the same structured intelligence — starting at $29.
+                Moving to another country is complicated. GoMate tells you what to do next, which documents you still need, and what could go wrong — before it costs you time or money.
               </p>
             </motion.div>
 
@@ -132,8 +155,15 @@ const PricingPage = () => {
           </div>
         </section>
 
+        {/* Short framing block */}
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-2 text-center">
+          <p className="text-stone-500 text-base">
+            Free is for figuring out if you can move. Move Pass is for actually doing it.
+          </p>
+        </section>
+
         {/* Tier Cards */}
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 relative z-10">
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-6">
             {tiers.map((tier, idx) => (
               <motion.div
@@ -147,11 +177,6 @@ const PricingPage = () => {
                     : 'border border-stone-200'
                 }`}
               >
-                {tier.highlight && (
-                  <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-sage-600 text-white text-xs font-bold px-4 py-1 rounded-full">
-                    Most Popular
-                  </span>
-                )}
                 <h3 className="text-lg font-bold text-stone-900">{tier.name}</h3>
                 <div className="mt-2 mb-1">
                   <span className="text-4xl font-serif font-bold text-stone-900">{tier.price}</span>
@@ -202,70 +227,84 @@ const PricingPage = () => {
           </div>
         </section>
 
-        {/* Pro Subscription Plans */}
-        <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        {/* What you get */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl font-serif font-bold text-stone-900 mb-2 text-center">Pro Subscription Plans</h2>
-            <p className="text-stone-600 text-center mb-8">Save 36% with an annual plan — covers your full relocation lifecycle.</p>
+            <h2 className="text-2xl lg:text-3xl font-serif font-bold text-stone-900 mb-2 text-center">What you actually get</h2>
+            <p className="text-stone-500 text-center mb-10 max-w-2xl mx-auto">
+              For $29 you get one Move Pass for one move. Here’s what that means in plain English.
+            </p>
 
-            <div className="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden">
-              <div className="grid grid-cols-4 bg-stone-900 text-white text-sm font-medium">
-                <div className="p-4">Plan</div>
-                <div className="p-4 text-center">Price</div>
-                <div className="p-4 text-center">Per month</div>
-                <div className="p-4 text-center">Savings</div>
-              </div>
-              {bundles.map((b, idx) => (
-                <div key={b.plan} className={`grid grid-cols-4 text-sm ${idx < bundles.length - 1 ? 'border-b border-stone-100' : ''} ${b.plan === 'Annual' ? 'bg-sage-50' : ''}`}>
-                  <div className="p-4 font-medium text-stone-900 flex items-center gap-2">
-                    {b.plan}
-                    {b.plan === 'Annual' && <span className="text-xs bg-sage-600 text-white px-2 py-0.5 rounded-full">Best value</span>}
+            <div className="grid sm:grid-cols-2 gap-6">
+              {whatYouGet.map((item) => (
+                <div key={item.title} className="bg-white rounded-xl border border-stone-200 p-6 flex items-start gap-3">
+                  <Check size={18} className="text-sage-600 mt-1 shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-stone-900 mb-1">{item.title}</h3>
+                    <p className="text-sm text-stone-600 leading-relaxed">{item.body}</p>
                   </div>
-                  <div className="p-4 text-center text-stone-800">{b.price}</div>
-                  <div className="p-4 text-center text-stone-800">{b.perMonth}</div>
-                  <div className="p-4 text-center text-stone-500">{b.savings || '—'}</div>
                 </div>
               ))}
             </div>
           </motion.div>
         </section>
 
-        {/* Full Feature Matrix */}
+        {/* Who this is for */}
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl font-serif font-bold text-stone-900 mb-8 text-center">Full Feature Comparison</h2>
+            <h2 className="text-2xl lg:text-3xl font-serif font-bold text-stone-900 mb-10 text-center">Is Move Pass for you?</h2>
 
-            <div className="bg-white rounded-xl border border-stone-200 shadow-sm overflow-hidden">
-              <div className="grid grid-cols-3 bg-stone-900 text-white text-sm font-medium">
-                <div className="p-4">Feature</div>
-                <div className="p-4 text-center">Free</div>
-                <div className="p-4 text-center">Pro</div>
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="bg-sage-50 border border-sage-200 rounded-xl p-6">
+                <h3 className="font-semibold text-stone-900 mb-4">Yes, if</h3>
+                <ul className="space-y-3">
+                  {builtFor.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-stone-700">
+                      <Check size={16} className="text-sage-600 mt-0.5 shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              {featureMatrix.map((row, idx) => (
-                <div key={row.feature} className={`grid grid-cols-3 text-sm ${idx < featureMatrix.length - 1 ? 'border-b border-stone-100' : ''}`}>
-                  <div className="p-3 px-4 text-stone-700">{row.feature}</div>
-                  <div className="p-3 flex justify-center">
-                    {row.free ? <Check size={16} className="text-sage-600" /> : <Minus size={16} className="text-stone-300" />}
-                  </div>
-                  <div className="p-3 flex justify-center">
-                    {row.pro ? <Check size={16} className="text-sage-600" /> : <Minus size={16} className="text-stone-300" />}
-                  </div>
+              <div className="bg-white border border-stone-200 rounded-xl p-6">
+                <h3 className="font-semibold text-stone-900 mb-4">Maybe not yet, if</h3>
+                <ul className="space-y-3">
+                  {notForNow.map((item) => (
+                    <li key={item} className="flex items-start gap-2 text-sm text-stone-600">
+                      <span className="text-stone-300 mt-0.5 shrink-0">—</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
+        {/* Pricing FAQ */}
+        <section className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-2xl lg:text-3xl font-serif font-bold text-stone-900 mb-10 text-center">Pricing FAQ</h2>
+
+            <div className="space-y-4">
+              {pricingFaq.map((item) => (
+                <div key={item.q} className="bg-white rounded-xl border border-stone-200 p-6">
+                  <h3 className="font-semibold text-stone-900 mb-2">{item.q}</h3>
+                  <p className="text-sm text-stone-600 leading-relaxed">{item.a}</p>
                 </div>
               ))}
-              {/* Totals */}
-              <div className="grid grid-cols-3 text-sm border-t-2 border-stone-200 bg-stone-50 font-bold">
-                <div className="p-4 text-stone-900">Total features</div>
-                <div className="p-4 text-center text-stone-900">3</div>
-                <div className="p-4 text-center text-stone-900">23</div>
-              </div>
             </div>
           </motion.div>
         </section>
@@ -273,9 +312,9 @@ const PricingPage = () => {
         {/* Bottom CTA */}
         <section className="bg-stone-900 text-white py-16">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-serif font-bold mb-4">Ready to Plan Your Move?</h2>
+            <h2 className="text-3xl font-serif font-bold mb-4">Ready to actually plan your move?</h2>
             <p className="text-stone-300 mb-8 text-lg">
-              Start free. Upgrade when you need the full plan.
+              Start free. Buy Move Pass when you’re ready to actually move.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={APP_URL} target="_blank" rel="noopener noreferrer">

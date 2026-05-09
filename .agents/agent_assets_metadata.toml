@@ -2,12 +2,6 @@ uploads = []
 generated = []
 
 [[outputs]]
-id = "o0ESqUGt9Ls77vf-xrwcm"
-uri = "file://artifacts/gomate-promo/public/travel-bg.jpg"
-type = "image"
-title = "beautiful european city street cobblestone sunny"
-
-[[outputs]]
 id = "uCHhwHWhIYBhRrXYpe4gd"
 uri = "file://screenshots/gomate-hero.jpg"
 type = "image"

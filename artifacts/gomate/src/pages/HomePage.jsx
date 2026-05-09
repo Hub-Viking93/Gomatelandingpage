@@ -2,10 +2,9 @@ import React, { Suspense, lazy } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { MapPin, BookOpen, ArrowRight, Smartphone, Compass, Globe } from 'lucide-react';
+import { MapPin, BookOpen, ArrowRight, Smartphone, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ImageCarousel from '@/components/ImageCarousel';
-import WaitlistSignup from '@/components/WaitlistSignup';
 import { APP_URL } from '@/lib/config';
 
 // Lazy-load CanIMoveWidget — it pulls the full country data bundle and is below-the-fold
@@ -23,23 +22,8 @@ const HomePage = () => {
   }, {
     icon: Smartphone,
     title: 'GoMate App (Coming Soon)',
-    description: 'AI-powered, personalized relocation planning — step-by-step task management, compliance tracking, and deadline alerts tailored to your move.'
+    description: <><strong className="font-semibold text-stone-900">For your specific move.</strong> A personal plan for one relocation — what to do next, what documents you still need, and what could go wrong.</>
   }];
-  
-  const howToGetStartedSteps = [{
-    icon: Compass,
-    title: '1. Choose a Country',
-    description: 'Browse 125+ country guides to explore destinations — visas, housing, healthcare, cost of living, and the local systems that affect your move.'
-  }, {
-    icon: BookOpen,
-    title: '2. Learn What It Actually Takes',
-    description: 'Read our Field Guide for in-depth articles on admin, bureaucracy, banking, deadlines, and the common mistakes that delay relocations by months.'
-  }, {
-    icon: Smartphone,
-    title: '3. Plan Your Move',
-    description: 'When the GoMate App launches, get a personalized relocation plan with step-by-step task management, compliance tracking, and deadline alerts. Join the beta waitlist to be first in line.'
-  }];
-  
   return (
     <>
       <Helmet>
@@ -167,7 +151,7 @@ const HomePage = () => {
                 What is GoMate?
               </h2>
               <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-                125+ country guides covering the systems that actually run people's lives — visas, banking, healthcare, and the local rules no one warns you about.
+                Moving abroad is two jobs: figuring out <strong className="font-semibold text-stone-900">where</strong>, and figuring out <strong className="font-semibold text-stone-900">how</strong>. GoMate helps with both.
               </p>
             </motion.div>
 
@@ -313,20 +297,6 @@ const HomePage = () => {
           </div>
         </section>
 
-        {/* Beta Notice Banner before Section 3 */}
-        <section className="bg-amber-50 border-y border-amber-200 py-4 shadow-sm">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-amber-800 font-medium flex items-center justify-center flex-wrap gap-x-3 gap-y-1 text-sm sm:text-base">
-              <span className="relative flex h-3 w-3 shrink-0">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
-              </span>
-              The GoMate App is currently in active development.
-              <a href="#app-section" className="underline hover:text-amber-900 decoration-amber-400 decoration-2 underline-offset-2">Join our beta waitlist below!</a>
-            </p>
-          </div>
-        </section>
-
         {/* Section 3 - App Component */}
         <section id="app-section" className="bg-white py-24 scroll-mt-10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -346,19 +316,23 @@ const HomePage = () => {
                   Plan Deeper with the GoMate App
                 </h2>
                 <h3 className="text-xl font-medium text-sage-700 mb-6">
-                  Private, step-by-step planning for your specific relocation.
+                  Your full plan for one move — what to do, what to gather, and what to watch out for.
                 </h3>
                 <ul className="list-disc list-inside space-y-3 text-lg text-stone-700 leading-relaxed mb-8">
-                  <li>Plan relocation tasks over time, both before and after arrival.</li>
-                  <li>Understand why local requirements matter for YOUR unique situation.</li>
-                  <li>Avoid costly mistakes with personalized, context-aware guidance.</li>
-                  <li>Track administrative tasks, financial costs, and critical timelines.</li>
-                  <li>Get step-by-step help tailored to your chosen country and personal profile.</li>
+                  <li>A full plan for your move, from now to landing in your new country</li>
+                  <li>Step-by-step next actions, with sources you can check yourself</li>
+                  <li>A list of every document you still need to get</li>
+                  <li>Warnings when something could delay or block your move</li>
+                  <li>One place to track your plan, documents, and timeline</li>
                 </ul>
-                
-                {/* Beta Waitlist Form Component */}
-                <WaitlistSignup />
-                
+
+                <a href={APP_URL} target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-sage-600 hover:bg-sage-700 text-white px-8 py-6 rounded-lg transition-all duration-200 hover:shadow-md">
+                    Open the GoMate App
+                    <ArrowRight className="ml-2" size={18} />
+                  </Button>
+                </a>
+
               </motion.div>
 
               <motion.div initial={{
@@ -376,57 +350,6 @@ const HomePage = () => {
                   <img alt="GoMate app interface showing personalized relocation checklist and task management" className="w-full max-w-[420px] h-auto object-contain mx-auto rounded-xl shadow-inner" src="https://horizons-cdn.hostinger.com/c3f71188-98e9-4304-81e8-d1898a97b3b9/chatgpt-image-7-feb.-2026-22_59_34-ZYGYU.png" loading="lazy" width={420} height={600} />
                 </div>
               </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 4 - How to Get Started */}
-        <section className="bg-gradient-to-br from-indigo-50 to-purple-50 py-24 border-t border-indigo-100/50">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div initial={{
-            opacity: 0,
-            y: 20
-          }} whileInView={{
-            opacity: 1,
-            y: 0
-          }} viewport={{
-            once: true
-          }} transition={{
-            duration: 0.6
-          }} className="text-center mb-16">
-              <h2 className="text-4xl font-serif font-bold text-stone-900 mb-4">
-                How to Get Started
-              </h2>
-              <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-                Your journey to a new country starts here. Follow these simple steps to begin your relocation planning.
-              </p>
-            </motion.div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {howToGetStartedSteps.map((step, index) => (
-                <motion.div key={index} initial={{
-                opacity: 0,
-                y: 20
-              }} whileInView={{
-                opacity: 1,
-                y: 0
-              }} viewport={{
-                once: true
-              }} transition={{
-                duration: 0.6,
-                delay: index * 0.1
-              }} className="bg-white rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-stone-200">
-                  <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
-                    <step.icon className="text-indigo-700" size={24} />
-                  </div>
-                  <h3 className="text-xl font-serif font-semibold text-stone-900 mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-stone-600 leading-relaxed">
-                    {step.description}
-                  </p>
-                </motion.div>
-              ))}
             </div>
           </div>
         </section>
@@ -449,7 +372,7 @@ const HomePage = () => {
                 Ready to Plan Your Relocation?
               </h2>
               <p className="text-xl text-stone-300 mb-10 leading-relaxed">
-                Start by exploring countries or dive straight into personalized planning with the GoMate App.
+                Browse country guides for free, or open the app to plan your specific move.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <Link to="/country-guides">
@@ -457,9 +380,9 @@ const HomePage = () => {
                     Explore Country Guides
                   </Button>
                 </Link>
-                <a href="#app-section">
+                <a href={APP_URL} target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="border-2 border-white/40 text-white hover:bg-white/10 hover:text-white hover:border-white px-10 py-7 text-lg rounded-full transition-all duration-200 bg-transparent backdrop-blur-sm shadow-lg">
-                    Join App Beta Waitlist
+                    Open the GoMate App
                   </Button>
                 </a>
               </div>
