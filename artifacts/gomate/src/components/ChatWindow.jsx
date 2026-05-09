@@ -9,17 +9,6 @@ import LoadingSkeleton from './chat/LoadingSkeleton';
 import TypewriterText from './chat/TypewriterText';
 import AppRecommendationCTA from './chat/AppRecommendationCTA';
 import ResourcesSection from './chat/ResourcesSection';
-import GoMateCharacter from './chat/GoMateCharacter';
-
-const GoMateAvatar = ({ size = 'md' }) => {
-  const sizeClass = size === 'sm' ? 'w-7 h-7' : 'w-9 h-9';
-  return (
-    <div className={`${sizeClass} rounded-full bg-white border border-stone-100 shadow-sm flex items-center justify-center shrink-0 overflow-hidden`}>
-      <GoMateCharacter className="w-full h-full" />
-    </div>
-  );
-};
-
 const ChatWindow = () => {
   const { 
     isOpen, 
@@ -138,22 +127,15 @@ const ChatWindow = () => {
         >
           {/* Header */}
           <div className="bg-sage-600 p-4 flex items-center justify-between shrink-0 shadow-sm">
-            <div className="flex items-center gap-3">
-              {/* Logo avatar with online ring */}
-              <div className="relative">
-                <div className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center overflow-hidden">
-                  <GoMateCharacter className="w-full h-full" />
-                </div>
-                {/* Pulsing online dot */}
-                <span className="absolute bottom-0 right-0 flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-400 border-2 border-sage-600"></span>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-300"></span>
                 </span>
-              </div>
-              <div>
                 <h3 className="font-bold text-white text-base leading-tight">GoMate</h3>
-                <p className="text-sage-100 text-xs font-medium">Your relocation companion</p>
               </div>
+              <p className="text-sage-100 text-xs font-medium mt-0.5">Your relocation companion</p>
             </div>
             <div className="flex items-center gap-1">
               <button 
@@ -187,10 +169,7 @@ const ChatWindow = () => {
                     transition={{ duration: 0.3 }}
                     className={`flex items-end gap-2 ${isUser ? 'justify-end' : 'justify-start'}`}
                   >
-                    {/* GoMate avatar on the left of AI messages */}
-                    {!isUser && <GoMateAvatar size="sm" />}
-
-                    <div 
+                    <div
                       className={`max-w-[80%] p-3.5 rounded-2xl text-sm shadow-sm transition-all duration-200 ${
                         isUser 
                           ? 'bg-sage-600 text-white rounded-br-none shadow-md' 
@@ -245,7 +224,6 @@ const ChatWindow = () => {
                 exit={{ opacity: 0, scale: 0.9 }}
                 className="flex items-end gap-2"
               >
-                <GoMateAvatar size="sm" />
                 <LoadingSkeleton />
               </motion.div>
             )}
